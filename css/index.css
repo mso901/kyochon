@@ -1,0 +1,337 @@
+/*main_visual*/
+.main_visual{
+  position: relative;
+  width: 1920px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.main_visual ul{
+  width: 800%;
+}
+.main_visual ul li{
+  float: left;
+  width: 12.5%;
+}
+.main_visual p.prev,
+.main_visual p.next,
+.menu p.prev,
+.menu p.next{
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border-left: 1px  solid #AEAEAE;
+  border-bottom: 1px  solid #AEAEAE;
+
+}
+.main_visual p.prev,
+.menu p.prev{
+  left: 230px;
+  transform: translateY(-50%) rotate(45deg);
+}
+.main_visual p.next,
+.menu p.next{
+  left: 1600px;
+  transform: translateY(-50%) rotate(-135deg);
+}
+.main_visual .button{
+  position: absolute;
+  left: 1300px;
+  top: 415px;
+  width: 60px;
+  height: 20px;
+  line-height: 18px;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 12px;
+  text-align: left;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #fff;
+}
+/* .main_visual .button button::before{  
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  display: inline-block;
+  content: "||";
+} */
+.main_visual .button .play::after{
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  content: "";
+  width: 0;
+  height: 0;
+  border:solid transparent;
+  border-width: 5px 0;
+  border-left: 7px solid #000;
+}
+/*manu*/
+.menu{
+  width: 100%;
+  height: 560px;
+}
+h3{
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  padding: 70px 0 80px;
+  text-transform: uppercase;
+}
+.menu .menu_swiper{
+  position: relative;
+  width: 1200px;
+  height: 310px;
+  margin: auto;
+  overflow: hidden;
+} 
+.menu p.prev{
+  left: 8px;
+}
+.menu p.next{
+  left: 1150px;
+}
+.menu ul{
+  width: 1500px;
+} 
+.menu ul li{
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 310px;
+  background: no-repeat 50% 10px;
+}
+.menu ul li:first-child{
+  background-image: url(../image/menu/kyochon_original.png);
+}
+.menu ul li:nth-child(2){
+  background-image: url(../image/menu/red_original.png);
+}
+.menu ul li:nth-child(3){
+  background-image: url(../image/menu/half_original.png);
+}
+.menu ul li:nth-child(4){
+  background-image: url(../image/menu/honey_original.png);
+}
+.menu ul li:nth-child(5){
+  background-image: url(../image/menu/red_original.png);
+}
+.menu li a{
+  width: 100%;
+  height: 100%;
+}
+.menu li span{
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%,-100%);
+  padding: 8px 13px;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #000;
+}
+/*yellow*/
+.yellow{
+  width: 100%;
+  height: 440px;
+  background: rgb(255,203,68);
+}
+.yellow .y_inner{
+  position: relative;
+  width: 1240px;
+  margin: auto;
+}
+.y_inner::before{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 218px;
+  background: #fff;
+  height: 410px;
+  width: 1px;
+  transform: translateY(-50%);
+}
+.yellow .search,
+.yellow .happy{
+  float: left;
+  width: 620px;
+  padding: 60px;
+}
+h4{
+  font-size: 26px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: -1px;
+  padding-bottom: 50px;
+}
+/*search*/
+.search form{
+  width: 480px;
+}
+.search input{
+  float: left;
+  width: 420px;
+  height: 60px; 
+}
+.search input::placeholder{
+  text-indent: 10px;
+}
+.search form a{
+  float: left;
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  background: #000;
+}
+.search dl::before{
+  content: "";
+  display: block;
+  margin-top: 90px;
+  width: 480px;
+  height: 1px;
+  background: #fff;
+  margin-bottom: 25px;
+}
+.search dl dt{
+  padding-bottom: 7px;  
+  font-size: 18px;  
+  line-height: 30px;
+}
+.search dl dt a{
+  display: inline-block;
+  margin-left: 12px;
+  padding: 5px 11px 3px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -1px;
+  text-align: center;
+  border-radius: 20px;
+  background: #000;
+}
+.search dd{
+  font-size: 14px;
+  font-weight: 400;
+} 
+.search dd span{
+  position: relative;
+  padding-right: 8px;
+}
+.search dd span::after{
+  position: absolute;
+  top: 5px;
+  right: 0;
+  content: "";
+  width: 1px;
+  height: 13px;
+  background: #000;
+}
+/*happy*/
+.happy li{
+  display: inline-block;
+  width: 240px;
+  height: 190px;
+}
+.happy li a::before,
+.franchisee li a::before{
+  content: "";
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.happy li a::before{
+  width: 145px;
+  height: 145px;
+  background-color: #fff;
+  background-size: auto 64px;
+}
+.happy li:first-child a::before {
+  background-image: url(https://www.kyochon.com/images/main/ico_happy_event.png)
+}
+.happy li:nth-child(2) a::before {
+  background-image: url(https://www.kyochon.com/images/main/ico_happy_news.png)
+}
+.happy li a span{
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  line-height: 27px;
+  margin-top: 10px;
+  text-align: center;
+}
+/*franchisee*/
+.franchisee{
+  width: 1280px;
+  height: 500px;
+  margin: auto;
+}
+.franchisee h3{
+  padding-bottom: 0;
+}
+.franchisee p{
+  margin-top: 12px;
+  color: #626262;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+.franchisee ul {
+  margin: 48px 0 74px;
+  font-size: 0;
+}
+.franchisee li{
+  display: inline-block;
+  width: 320px;
+  height: 220px;
+  font-size: 16px;
+}
+.franchisee li a::before{
+  width: 190px;
+  height: 190px;
+}
+.franchisee li:first-child a::before {
+  background-image: url(../image/item/img_item_1.svg)
+}
+.franchisee li:nth-child(2) a::before {
+  background-image: url(../image/item/img_item_2.svg)
+}
+.franchisee li:nth-child(3) a::before {
+  background-image: url(../image/item/img_item_3.svg)
+}
+.franchisee li:nth-child(4) a::before {
+  background-image: url(../image/item/img_item_4.svg)
+}
+.franchisee li span{
+  position: relative;
+  display: block;
+  width: 110px;
+  margin: auto;
+  padding: 8px 12px;
+  padding-right: 32px;
+  background: #fff;
+  margin-top: -10px;
+  line-height: 1.5;
+  border-radius: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+}
+.franchisee li span:after{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;  
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://www.kyochon.com/images/main/ico_search_blk.svg);
+}

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@600;800&display=swap');
+body{
+  overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', dotum, sans-serif;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+}
+.inner{
+  width: 1480px;
+  margin: auto;
+}
+a{display: block;}
+/*header*/
+header{
+  width: 100%;
+  height: 135px;
+  background: #fff;
+}
+header .h_inner{
+  position: relative;
+  width: 1440px;
+  height: 100%;
+  margin: auto;
+}
+header .h_inner h1{
+  float: left;
+  height: 135px;
+  line-height: 135px;
+}
+header .h_inner h1 
+.h_inner nav{
+  float: right;
+}
+.h_inner nav li{
+  float: left;
+  padding: 82px 0 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.h_inner nav li a{
+  padding: 0 35px;
+}
+.h_inner nav li~li a{
+  background: url(../image/header/line_gnb.gif) no-repeat 0 9px;
+}
+.h_inner .h_top{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 12px;
+}
+.h_top dl{
+  float: left;
+  width: 200px;
+  height: 25px;
+}
+.h_top dl dd{
+  float: left;
+  width: 50%;
+  font-weight: 800;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 2px;
+}
+.h_top dl dd:nth-child(2),
+.h_top dl dd:nth-child(3):hover{
+  color: #000;
+  background: rgb(247,185,20);
+}
+.h_top dl dd:nth-child(3){
+  color:#fff;
+  background: rgb(0,0,0);
+}
+.h_top ul{
+  float: right;
+  margin-top: 15px;
+}
+.h_top ul li{
+  float: left;
+}
+.h_top ul li a{
+  font-size: 13px;
+  color:rgb(170,158,136);
+  padding: 8px;
+}
+.h_top ul li~li a{
+  background: url(../image/header/line_gnb.gif) no-repeat 0 10px;
+} 
+/*footer*/
+footer{
+  border-top: 1px solid #d5d1cc;
+}
+footer .f_inner{
+  width: 1240px;
+  height: 280px;
+  margin: auto;
+  padding: 50px 40px 30px;
+  text-align: center;
+  color: #737373;
+  font-size: 14px;
+  font-weight: normal;
+}
+footer li{
+  display: inline-block;
+  padding: 0 10px 0 12px;
+}
+footer li~li{
+  background: url(https://www.kyochon.com/images/common/line_footer01.gif) no-repeat 0 5px;
+}
+footer .f_middle{
+  margin: 28px 0;
+}
+footer .f_middle span{
+  position: relative;
+  margin: 0 25px;
+  padding: 0 25px;
+  width: 290px;
+  height: 40px;
+}
+footer .f_middle span::before, 
+footer .f_middle span::after{  
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  display: block;
+  width: 1px;
+  height: 13px;
+  background: #B6B6B6;
+}
+footer .f_middle span::before{
+  left: 0;
+}
+footer .f_middle span::after{
+  right: 0;
+}  
+footer .f_middle a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+footer address{
+  word-break: keep-all;
+  margin-top: 10px;
+}
+footer address span{
+  padding: 0 7px 0 9px;
+  line-height: 27px;
+  background: url(https://www.kyochon.com/images/common/line_footer02.gif) no-repeat 0 6px;
+}
+footer address span:first-child,
+footer address span:nth-child(5),
+footer address span:nth-child(10){
+  background: none;
+}
+small{
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
